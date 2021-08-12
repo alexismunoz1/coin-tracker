@@ -12,14 +12,14 @@
     />
     <title>coin-tracker</title>
     <link rel="stylesheet" href="./index.css" />
-    
-    <script defer src="./index.js"></script>
-    
-    <script defer src="./sections/section-search/index.js" ></script>
 
-    <script defer src="./state.js" ></script>
-
+    <script defer type="module" src="./state.js"></script>
+    <script defer type="module" src="./sections/section-search/index.js"></script>
+    
+    
     <!-- <script defer src="./otro.js"></script> -->
+    
+    <script defer type="module" src="./index.js"></script>
   </head>
   <body>
     <header class="header">
@@ -38,55 +38,55 @@
 
     <section class="section-cards">
       <!-- <template id="section-cards__template"> -->
-        <div class="section-cards__card">
-          <div class="section-cards__card-content-x">
-            <div class="section-cards__card-circulo">
-              <img class="section-cards__card-circulo-fire" src="./assets/fire.svg" alt="" />
-            </div>
-            <img class="section-cards__card-x" src="./assets/vector-x.svg" />
+      <div class="section-cards__card">
+        <div class="section-cards__card-content-x">
+          <div class="section-cards__card-circulo">
+            <img class="section-cards__card-circulo-fire" src="./assets/fire.svg" alt="" />
           </div>
-
-          <div class="section-cards__card-content-moneda">
-            <div class="section-cards__card-siglas-nombre-content">
-              <span class="section-cards__card-moneda-siglas">AAA</span>
-              <span class="section-cards__card-moneda-nombre">(Nombre)</span>
-            </div>
-            <img class="section-cards__card-moneda-logo" src="./assets/money.svg" />
-          </div>
-          <span class="section-cards__precio-moneda"
-            >USD $<span class="section-cards__precio-moneda-precio">00.000,00</span></span
-          >
-          <div class="section-cards__cont-form">
-            <form class="section-cards__form-value-max">
-              <input
-                class="section-cards__form-value-max-input"
-                type="text"
-                placeholder="Ej.$50000"
-              />
-              <button class="section-cards__form-value-max-button">
-                <img
-                  class="section-cards__form-value-max-button-img"
-                  src="./assets/btn-value-max.svg"
-                  alt=""
-                />
-              </button>
-            </form>
-            <form class="section-cards__form-value-min">
-              <input
-                class="section-cards__form-value-min-input"
-                type="text"
-                placeholder="Ej.$30000"
-              />
-              <button class="section-cards__form-value-min-button">
-                <img
-                  class="section-cards__form-value-min-button-img"
-                  src="./assets/btn-value-min.svg"
-                  alt=""
-                />
-              </button>
-            </form>
-          </div>
+          <img class="section-cards__card-x" src="./assets/vector-x.svg" />
         </div>
+
+        <div class="section-cards__card-content-moneda">
+          <div class="section-cards__card-siglas-nombre-content">
+            <span class="section-cards__card-moneda-siglas">AAA</span>
+            <span class="section-cards__card-moneda-nombre">(Nombre)</span>
+          </div>
+          <img class="section-cards__card-moneda-logo" src="./assets/money.svg" />
+        </div>
+        <span class="section-cards__precio-moneda"
+          >USD $<span class="section-cards__precio-moneda-precio">00.000,00</span></span
+        >
+        <div class="section-cards__cont-form">
+          <form class="section-cards__form-value-max">
+            <input
+              class="section-cards__form-value-max-input"
+              type="text"
+              placeholder="Ej.$50000"
+            />
+            <button class="section-cards__form-value-max-button">
+              <img
+                class="section-cards__form-value-max-button-img"
+                src="./assets/btn-value-max.svg"
+                alt=""
+              />
+            </button>
+          </form>
+          <form class="section-cards__form-value-min">
+            <input
+              class="section-cards__form-value-min-input"
+              type="text"
+              placeholder="Ej.$30000"
+            />
+            <button class="section-cards__form-value-min-button">
+              <img
+                class="section-cards__form-value-min-button-img"
+                src="./assets/btn-value-min.svg"
+                alt=""
+              />
+            </button>
+          </form>
+        </div>
+      </div>
       <!-- </template> -->
       <div class="section-cards__espacio-vasio">
         <div class="section-cards__espacio-vasio__barra-uno"></div>
