@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <title>coin-tracker</title>
+    <link rel="stylesheet" href="./index.css" />
+    
+    <script defer src="./index.js"></script>
+    
+    <script defer src="./sections/section-search/index.js" ></script>
+
+    <script defer src="./state.js" ></script>
+
+    <!-- <script defer src="./otro.js"></script> -->
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__logo" src="./assets/logo.svg" />
+    </header>
+
+    <main class="main">
+      <h1 class="main__title">
+        Chequea tus
+        <span class="main__title-palabra-naranja">inversiones</span> en un solo lugar
+      </h1>
+      <img class="main__imagen" src="./assets/ilustraciones.svg" />
+    </main>
+
+    <section class="section-search"></section>
+
+    <section class="section-cards">
+      <!-- <template id="section-cards__template"> -->
+        <div class="section-cards__card">
+          <div class="section-cards__card-content-x">
+            <div class="section-cards__card-circulo">
+              <img class="section-cards__card-circulo-fire" src="./assets/fire.svg" alt="" />
+            </div>
+            <img class="section-cards__card-x" src="./assets/vector-x.svg" />
+          </div>
+
+          <div class="section-cards__card-content-moneda">
+            <div class="section-cards__card-siglas-nombre-content">
+              <span class="section-cards__card-moneda-siglas">AAA</span>
+              <span class="section-cards__card-moneda-nombre">(Nombre)</span>
+            </div>
+            <img class="section-cards__card-moneda-logo" src="./assets/money.svg" />
+          </div>
+          <span class="section-cards__precio-moneda"
+            >USD $<span class="section-cards__precio-moneda-precio">00.000,00</span></span
+          >
+          <div class="section-cards__cont-form">
+            <form class="section-cards__form-value-max">
+              <input
+                class="section-cards__form-value-max-input"
+                type="text"
+                placeholder="Ej.$50000"
+              />
+              <button class="section-cards__form-value-max-button">
+                <img
+                  class="section-cards__form-value-max-button-img"
+                  src="./assets/btn-value-max.svg"
+                  alt=""
+                />
+              </button>
+            </form>
+            <form class="section-cards__form-value-min">
+              <input
+                class="section-cards__form-value-min-input"
+                type="text"
+                placeholder="Ej.$30000"
+              />
+              <button class="section-cards__form-value-min-button">
+                <img
+                  class="section-cards__form-value-min-button-img"
+                  src="./assets/btn-value-min.svg"
+                  alt=""
+                />
+              </button>
+            </form>
+          </div>
+        </div>
+      <!-- </template> -->
+      <div class="section-cards__espacio-vasio">
+        <div class="section-cards__espacio-vasio__barra-uno"></div>
+        <div class="section-cards__espacio-vasio__barra-dos"></div>
+      </div>
+    </section>
+  </body>
+</html>
