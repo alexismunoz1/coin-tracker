@@ -74,6 +74,7 @@ customElements.define(
 
       style.innerHTML = `
         .section-cards__card {
+          box-sizing: border-box;
           position: relative;
           width: 156px;
           height: 224px;
@@ -207,6 +208,7 @@ customElements.define(
           }
         }
         .section-cards__precio-moneda {
+          text-align: center;
           font-weight: 900;
           font-size: 18px;
           color: var(--color-green);
@@ -222,6 +224,9 @@ customElements.define(
           }
         }
         .section-cards__cont-form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
         .section-cards__form-value-max,
         .section-cards__form-value-min {
@@ -306,6 +311,19 @@ customElements.define(
             height: 24px;
           }
         }`;
+
+        function addCoinCard(params) {
+          const template = document.querySelector("#section-cards__template");
+          const contenedor = document.querySelector(".section-cards");
+        
+          template.content.querySelector(".section-cards__card-moneda-siglas").textContent = `Hola`;
+          template.content.querySelector(".section-cards__card-moneda-nombre").textContent = `Chau`;
+          // template.content.querySelector(".section-cards__card-moneda-logo").src = ``;
+          template.content.querySelector(".section-cards__precio-moneda-precio").textContent = `1234`;
+        
+          const clone = document.importNode(template.content, true);
+          contenedor.appendChild(clone);
+        }
 
       this.shadow.appendChild(div);
       this.shadow.appendChild(style);

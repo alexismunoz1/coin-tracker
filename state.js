@@ -1,6 +1,6 @@
 const state = {
   data: {
-    cards: [{ id: "BTC/USDT", symbolID: "BINANCE:BTCUSDT" }],
+    cards: [],
   },
 
   listeners: [],
@@ -19,18 +19,28 @@ const state = {
 
   deleteCard(id) {},
 
-  setState(newState) {
-    this.data = newState;
-    for (const cd of this.listeners) {
-      cd(newState);
-    }
-    localStorage.setItem("coin-tracker", JSON.stringify(newState));
+  setState(idCard, symbolCoin) {
+    const currentState = this.data;
+    // for (const card of currentState.cards) {
+    //   if (card.id == idCard) {
+    //     return false;
+    //   }
+    // }
+
+    currentState.cards.push({
+      idCard: idCard,
+      symbolCoin: symbolCoin,
+      precioMayor: 1000000,
+      precio: 1,
+    });
     console.log("soy el state, he cambiado", this.data);
+  },
+
+  saveLocalStorage() {
+    // localStorage.setItem("coin-tracker", JSON.stringify(newState));
   },
 
   suscribe(callback) {
     this.listeners.push(callback);
   },
 };
-
-// export { state };

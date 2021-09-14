@@ -19,6 +19,7 @@ customElements.define(
 
       style.innerHTML = `
           .section-cards__espacio-vasio {
+              box-sizing: border-box; 
               width: 156px;
               height: 224px;
               border-radius: 8px;
